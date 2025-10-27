@@ -43,7 +43,7 @@ Edit constants in src/main.rs:
 
 Running the program:
 
-1. Clone the entire repository onto your device command:
+1. Clone the entire repository onto your device command: https://github.com/SamarthKottary/frame_capture_rust_cp-e28a.git
 
 
 2. Build Command: cargo build
