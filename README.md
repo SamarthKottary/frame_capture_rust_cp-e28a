@@ -1,23 +1,23 @@
-RTSP Frame Grabber
+# RTSP Frame Grabber
 
-Description:
-Project Structure Overview:
+## **Description:**
+**Project Structure Overview:**
 
 <img width="298" height="240" alt="Screenshot from 2025-10-27 18-49-54" src="https://github.com/user-attachments/assets/1baa7ccf-11f6-4caa-849f-bcadb8884980" />
 
-Expected Output:
+**Expected Output:**
 
 <img width="726" height="266" alt="Screenshot from 2025-10-27 18-50-58" src="https://github.com/user-attachments/assets/2c85272c-6d41-47ba-af72-3d201223e1df" />
 
 Connects to an CP-E28A and saves one frame per minute as a JPG image locally. Uses opencv and chrono crates to decode/decrypt the frames.
 
-Prerequisites:
+## **Prerequisites:**
 
 Rust: Install via rustup.
 
 OpenCV Dev Libs: On Debian/Ubuntu: sudo apt update && sudo apt install -y build-essential cmake pkg-config libopencv-dev
 
-Network Setup:
+## **Network Setup:**
 Section 1:
 This is CP-E28A camera’s RTSP live video URL
 rtsp://192.168.137.192:5543/live/channel0
@@ -41,22 +41,20 @@ Here,
 
 5. /live/channel0 is the stream path, also found in ODM 2.2.250 app
 
-Configuration:
+## **Configuration:**
 
 Edit constants in src/main.rs:
 1. rtsp_url: Your camera's full RTSP stream URL.
 2. output_dir: Folder name for saved frames (e.g., "captured_frames").
 3. frame_interval_ms: Interval in milliseconds (e.g., 60000 for 1/min).
 
-Running the program:
+## **Running the program:**
 
 1. Clone the entire repository onto your device command: https://github.com/SamarthKottary/frame_capture_rust_cp-e28a.git
-
-
 2. Build Command: cargo build
 3. Run Command: cargo run
 
-Output Format
+## **Output Format:**
 
 Filenames: SEQUENTIAL_NUMBER_YYYYMMDD.jpg (e.g., 1_20251027.jpg)
 
