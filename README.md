@@ -11,6 +11,8 @@
 
 Connects to an CP-E28A and saves one frame per minute as a JPG image locally. Uses opencv and chrono crates to decode/decrypt the frames.
 
+### Note: CP-E28A and the system must be on same network.
+
 ## **Prerequisites:**
 
 Rust: Install via rustup.
