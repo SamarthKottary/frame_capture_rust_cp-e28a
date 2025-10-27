@@ -2,9 +2,11 @@ RTSP Frame Grabber
 
 Description:
 Project Structure Overview:
+
 <img width="298" height="240" alt="Screenshot from 2025-10-27 18-49-54" src="https://github.com/user-attachments/assets/1baa7ccf-11f6-4caa-849f-bcadb8884980" />
 
 Expected Output:
+
 <img width="726" height="266" alt="Screenshot from 2025-10-27 18-50-58" src="https://github.com/user-attachments/assets/2c85272c-6d41-47ba-af72-3d201223e1df" />
 
 Connects to an CP-E28A and saves one frame per minute as a JPG image locally. Uses opencv and chrono crates to decode/decrypt the frames.
