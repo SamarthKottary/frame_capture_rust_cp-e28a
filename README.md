@@ -9,7 +9,7 @@
 
 <img width="726" height="266" alt="Screenshot from 2025-10-27 18-50-58" src="https://github.com/user-attachments/assets/2c85272c-6d41-47ba-af72-3d201223e1df" />
 
-Connects to an CP-E28A and saves one frame per minute as a JPG image locally. Uses opencv and chrono crates to decode/decrypt the frames.
+Connects to an CP-E28A and saves one frame per minute as a JPG image locally. Uses opencv crates to decode video to get individual frames and chrono crate for format and timezone inclusion.
 
 ### Note: CP-E28A and the system must be on same network.
 
